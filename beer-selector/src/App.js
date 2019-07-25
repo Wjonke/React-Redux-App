@@ -35,12 +35,15 @@ export default App;
 
 // Get a Single Beer
 // Gets a beer from the api using the beers id.
-
 // $ curl https://api.punkapi.com/v2/beers/1
+
 // Get Random Beer
 // Gets a random beer from the API, this takes no paramaters.
-
 // $ curl https://api.punkapi.com/v2/beers/random
+
+
+
+
 // Example Response
 // All beer endpoints return a json array with a number of beer objects inside.
 

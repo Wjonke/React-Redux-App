@@ -11,12 +11,12 @@ export const fetchBeer = () => dispatch => {
   dispatch({type: FETCH_BEER_START});
 
   axios
-    .get('https://api.punkapi.com/v2/beers/random')
+    .get('https://cors-anywhere.herokuapp.com/https://api.punkapi.com/v2/beers/random')
 
     .then(res => {
       dispatch({type:FETCH_BEER_SUCCESS, payload: res.data});
     })
-    
+
     .catch((err => console.log(err.response)))
 
 }
