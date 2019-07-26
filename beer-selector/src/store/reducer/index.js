@@ -9,7 +9,7 @@ import {
 export const initialState = {
   error: '',
   isFetching: false,
-  beer:null
+  beer:''
 }
 
 
@@ -22,7 +22,7 @@ export const reducer = (state = initialState, action) => {
         ...state,
         error: '',
         isFetching: true,
-        beer:null
+        beer:''
       };
 
       case FETCH_BEER_SUCCESS:
@@ -38,7 +38,7 @@ export const reducer = (state = initialState, action) => {
         ...state,
         error: '',
         isFetching: false,
-        beer:null
+        beer:''
       };
   
     default:

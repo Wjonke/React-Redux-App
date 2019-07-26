@@ -14,7 +14,8 @@ export const fetchBeer = () => dispatch => {
     .get('https://cors-anywhere.herokuapp.com/https://api.punkapi.com/v2/beers/random')
 
     .then(res => {
-      dispatch({type:FETCH_BEER_SUCCESS, payload: res.data});
+      console.log(res.data[0]);
+      dispatch({type:FETCH_BEER_SUCCESS, payload: res.data[0]});
     })
 
     .catch((err => console.log(err.response)))
